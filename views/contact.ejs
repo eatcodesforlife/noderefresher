@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node app</title>
+</head>
+
+<body>
+    <%- include('partials/nav') %>
+    <h1>Contact the best software engineer in the world!</h1>
+    <form id='contact-form' method="POST" action='/contact'>
+        <label for="person">Who do wish to contact?</label>    
+        <input type="text" name="person" value="<%= data.person %>">
+        <label for="department?">Which department?</label>
+        <input type="text" name="department" value="<%= data.department %>">
+        <label for="email">Your email</label>
+        <input type="email" name="email">
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

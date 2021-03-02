@@ -1,0 +1,8 @@
+{ 
+    "obj" : {
+        "name": "Cris Acosta",
+        "job": "The most amazing Sowftware engineer in the world!",
+        "age": 37,
+        "loves" : [ "bianca", "coffee", "programming"]
+    }
+}

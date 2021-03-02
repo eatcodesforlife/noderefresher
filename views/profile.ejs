@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/nav') %>
+    <h1>Hello from EJS ma dooooods! This is <%= data.person %>'s profile</h1>
+    <h2>More info</h2>
+    <table>
+        <tr>
+            <td>
+                Wife: <%= data.wife %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Job: <%= data.job %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Likes:
+               <ul>
+                   <% data.likes.map( (like, index) => { %>
+                     <li key={index}><%= like %></li>
+                   <% }) %>
+               </ul>
+            </td>
+        </tr>
+    </table>
+    
+
+</body>
+</html>

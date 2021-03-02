@@ -1,0 +1,18 @@
+{
+  "name": "noderefresher",
+  "version": "1.0.0",
+  "description": "- It is JavaScript runtime built on Chrome's V8 JS engine. It is uses an event-driven, non-blocking model that makes it lightweight and efficient... In layman's term it allows you the developer to use JavaScript in the backend or server.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Cris Acosta",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
