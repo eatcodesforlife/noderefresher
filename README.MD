@@ -188,7 +188,7 @@ module.exports = {
 
 ```
 
-#### Either methods above can be exported to another JS module with the same method
+#### Either methods above can be imported to another JS module with the same method
 
 ```
 const stuff = require('./stuff')
